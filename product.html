@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>صحراء | SAHRĀ — هودي</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="brand">
+        <div class="logo">
+          <img src="images/logo.jpg" alt="SAHRĀ Logo">
+        </div>
+        <div class="brandText">
+          <h1>صحراء | SAHRĀ</h1>
+          <p>ملابس • ستايل صحراوي فخم</p>
+        </div>
+      </div>
+
+     <nav class="nav">
+  <a href="index.html">الرئيسية</a>
+  <a href="#details">التفاصيل</a>
+  <a href="#contact">تواصل</a>
+</nav>
+
+      <div class="pill" title="سلة">
+        🛒 <span id="cartCount">0</span>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="grid" id="product">
+
+        <!-- صور المنتج -->
+        <div class="card">
+          <div class="gallery">
+            <div class="badge">HOODIE • SAHRĀ</div>
+
+           <div class="zoomWrap">
+  <div class="imgZoom" id="imgZoom">
+    <img id="productImg" class="mainImg" src="images/hoodie-1.jpg" alt="هودي صحراء">
+    <div class="zoomLens" id="zoomLens"></div>
+  </div>
+
+  <div class="zoomResult" id="zoomResult"></div>
+</div>
+            <div class="thumbs">
+              <button class="thumb active" data-img="images/hoodie-1.jpg" aria-label="صورة 1">
+                <img src="images/hoodie-1.jpg" alt="">
+              </button>
+              <button class="thumb" data-img="images/hoodie-2.jpg" aria-label="صورة 2">
+                <img src="images/hoodie-2.jpg" alt="">
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- معلومات المنتج -->
+        <div class="card">
+          <div class="info" id="details">
+            <p class="kicker">قطن دافئ • قصّة نظيفة • مناسب للشتاء</p>
+            <h2 class="title">هودي SAHRĀ</h2>
+
+            <p class="desc">
+              هودي بخامة ناعمة ودافئة، تصميم بسيط وفخم يحمل هوية صحراء.
+              مناسب للبس اليومي والطلعات، ويجي بمقاسات متعددة وألوان عملية.
+            </p>
+
+            <div class="priceRow">
+              <div class="price">199 د.ل</div>
+              <div class="old">250 د.ل</div>
+              <div class="chip">خصم</div>
+            </div>
+
+            <div class="opts">
+              <div class="select">
+                <label for="size">المقاس</label>
+                <select id="size">
+                  <option value="S">S</option>
+                  <option value="M" selected>M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                </select>
+              </div>
+
+              <div class="select">
+                <label for="color">اللون</label>
+                <select id="color">
+                  <option value="أبيض">أبيض</option>
+                  <option value="أسود" selected>أسود</option>
+                  <option value="بيج">بيج</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="btns">
+              <button class="primary" id="addToCart">أضف للسلة</button>
+              <button class="ghost" id="buyNow">اشتري الآن (واتساب)</button>
+            </div>
+
+            <div class="mini">
+              <span>🚚 توصيل جميع أنحاء ليبيا</span>
+              <span>🔁 استبدال خلال 7 أيام</span>
+              <span>✅ اختيار المقاس واللون قبل الطلب</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="card contact" id="contact">
+        <div class="info">
+          <h3 class="h3">تواصل سريع</h3>
+          <p class="desc">
+            زر “اشتري الآن” يفتح واتساب برسالة جاهزة فيها المقاس واللون.
+          </p>
+          <div class="btns">
+            <a class="ghost linkBtn" id="waLink" href="#" target="_blank" rel="noopener">واتساب 💬</a>
+            <a class="ghost linkBtn" href="#" onclick="alert('alitaher371gmail.com.'); return false;">إيميل ✉️</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      © <span id="year"></span> صحراء | SAHRĀ — كل الحقوق محفوظة
+    </footer>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <div class="modalBox" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+      <h3 id="mTitle">تمت الإضافة للسلة ✅</h3>
+      <p id="mBody">—</p>
+      <div class="modalActions">
+        <button class="ghost" id="closeModal">تمام</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
